@@ -13,4 +13,11 @@
 ### Helm
 
 - https://registry.terraform.io/providers/hashicorp/helm/latest/docs#in-cluster-config
-- 
+
+
+### To-do
+1. Helm chart ebs csi installation
+2. Search for dynamic inventory
+3. Install using addon (EBS CSI)
+4. Learn helm dynamic way to provision other csi 
+5. IAM Policy to create policy
