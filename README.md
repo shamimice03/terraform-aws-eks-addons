@@ -8,7 +8,8 @@
 - https://github.com/aws/eks-charts
 - https://github.com/aws-ia/terraform-aws-eks-blueprints
 - https://github.com/aws-ia/terraform-aws-eks-blueprints-addon
-- 
+- https://github.com/aws-ia/terraform-aws-eks-blueprints-addons
+
 ### Helm
 
 - https://registry.terraform.io/providers/hashicorp/helm/latest/docs#in-cluster-config
