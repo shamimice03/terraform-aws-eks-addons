@@ -1,5 +1,5 @@
+cluster_name      = "eks-cluster"
 namespace         = "kube-system"
 serviceaccount    = "ebs-csi-controller-sa"
-cluster_name      = "eks-cluster"
-oidc_provider_arn = "arn:aws:iam::391178969547:oidc-provider/oidc.eks.ap-northeast-1.amazonaws.com/id/988BA0262B13AE2579E2AA7209AF9E95"
+oidc_provider_arn = "arn:aws:iam::391178969547:oidc-provider/oidc.eks.ap-northeast-1.amazonaws.com/id/271D381BE8F9E7A4254F0DC708CC6015"
 irsa_role_name    = "EKSEBSCSIRole" 

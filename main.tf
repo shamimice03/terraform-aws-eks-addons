@@ -36,7 +36,7 @@ resource "aws_iam_role" "irsa_role" {
 
 # Associate IAM Role and Policy
 resource "aws_iam_role_policy_attachment" "irsa_iam_role_policy_attach" {
-  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy"
+  policy_arn = "arn:aws:iam::391178969547:policy/EBSCSIPolicy"
   role       = aws_iam_role.irsa_role.name
 }
 
@@ -45,3 +45,12 @@ output "irsa_iam_role_arn" {
   value       = aws_iam_role.irsa_role.arn
 }
 
+# ######################################################################
+# # EBS CSI Add-on
+# ######################################################################
+
+resource "aws_eks_addon" "example" {
+  cluster_name = var.cluster_name
+  addon_name   = "aws-ebs-csi-driver"
+  service_account_role_arn = aws_iam_role.irsa_role.arn
+}
